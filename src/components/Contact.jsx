@@ -1,10 +1,54 @@
 const Contact = () => {
   return (
     <>
-      <div className='flex flex-col items-center justify-center h-[90vh]'>
-        <h1 className='text-gray-100 font-bold text-center text-7xl md:text-9xl'>
-          Contact
+      <div className='h-[90vh] flex flex-col justify-center items-center'>
+        <h1 className='text-gray-100 font-bold text-center text-5xl md:text-6xl pt-16'>
+          Contact Me!
         </h1>
+        <div className='contact-form w-3/4 lg:w-2/4 flex items-center justify-center h-full mx-auto'>
+          <form className='w-full'>
+            <div className='flex items-center justify-evenly w-full mb-10 gap-4 md:gap-8'>
+              <input
+                className='rounded-xl p-2 w-2/4 focus:outline-none'
+                type='text'
+                name='firstName'
+                id='firstName'
+                placeholder='First name'
+                required
+              />
+              <input
+                className='rounded-xl p-2 w-2/4 focus:outline-none'
+                type='text'
+                name='lastName'
+                id='lastName'
+                placeholder='Last name'
+              />
+            </div>
+            <div className='flex flex-col items-center justify-center w-full'>
+              <input
+                className='rounded-xl p-2 w-full focus:outline-none mb-10'
+                type='email'
+                name='email'
+                id='email'
+                placeholder='Your email'
+                required
+              />
+              <textarea
+                className='rounded-xl p-2 w-full h-56 focus:outline-none resize-none mb-10'
+                name='message'
+                id='message'
+                placeholder='Your message'
+                required
+              ></textarea>
+              <button type='submit' className='button lg:self-end'>
+                Get in touch
+                <div className='hoverEffect'>
+                  <div></div>
+                </div>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </>
   );
