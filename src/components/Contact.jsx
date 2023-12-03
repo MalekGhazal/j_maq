@@ -40,11 +40,8 @@ const Contact = () => {
                 placeholder='Your message'
                 required
               ></textarea>
-              <button type='submit' className='button lg:self-end'>
-                Get in touch
-                <div className='hoverEffect'>
-                  <div></div>
-                </div>
+              <button type='submit' className='contact-btn w-2/4 lg:w-1/4'>
+                SEND
               </button>
             </div>
           </form>
