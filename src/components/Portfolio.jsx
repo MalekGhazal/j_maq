@@ -32,7 +32,8 @@ const Portfolio = () => {
           >
             To make you smile is my ultimate goal, hundreds of happy customers,
             check out my socials to see my latest work and to know me better.
-            Your beautiful smile might be next &#9829;
+            Your beautiful smile might be next{" "}
+            <i className='fa-solid fa-heart'></i>
           </h2>
         </div>
         <div className='2xl:px-20 lg:px-12 px-4 flex flex-wrap justify-center mt-4'>
@@ -42,12 +43,14 @@ const Portfolio = () => {
                 tabIndex={0}
                 src={image17}
                 alt='portfolio img'
+                loading='lazy'
                 className='w-20 h-20 rounded-lg mr-6 object-cover'
               />
               <img
                 tabIndex={0}
                 src={image2}
                 alt='portfolio img'
+                loading='lazy'
                 className='w-48 h-36 rounded-lg object-cover'
               />
             </div>
@@ -56,6 +59,7 @@ const Portfolio = () => {
                 tabIndex={0}
                 src={image3}
                 alt='portfolio img'
+                loading='lazy'
                 className='object-cover rounded-lg w-48 h-36'
               />
             </div>
@@ -64,12 +68,14 @@ const Portfolio = () => {
                 tabIndex={0}
                 src={image4}
                 alt='portfolio img'
+                loading='lazy'
                 className='w-48 h-48 rounded-lg object-cover'
               />
               <img
                 tabIndex={0}
                 src={image5}
                 alt='portfolio img'
+                loading='lazy'
                 className='w-20 h-20 rounded-lg ml-6 flex-shrink-0 object-cover'
               />
             </div>
@@ -80,18 +86,21 @@ const Portfolio = () => {
               src={image6}
               className='w-72 h-80 rounded-lg object-cover'
               alt='portfolio img'
+              loading='lazy'
             />
             <div className='flex items-start mt-6'>
               <img
                 tabIndex={0}
                 src={image7}
                 alt='portfolio img'
+                loading='lazy'
                 className='w-48 h-48 rounded-lg object-cover'
               />
               <img
                 tabIndex={0}
                 src={image8}
                 alt='portfolio img'
+                loading='lazy'
                 className='w-20 h-20 rounded-lg ml-6 object-cover'
               />
             </div>
@@ -103,6 +112,7 @@ const Portfolio = () => {
                   tabIndex={0}
                   src={image9}
                   alt='portfolio img'
+                  loading='lazy'
                   className='w-96 h-72 rounded-lg object-center object-cover'
                 />
               </div>
@@ -113,18 +123,21 @@ const Portfolio = () => {
                     src={image10}
                     className='w-20 h-20 rounded-lg mt-14 object-cover'
                     alt='portfolio img'
+                    loading='lazy'
                   />
                   <img
                     tabIndex={0}
                     src={image19}
                     className='w-20 h-24 rounded-lg ml-6 object-cover'
                     alt='portfolio img'
+                    loading='lazy'
                   />
                 </div>
                 <img
                   tabIndex={0}
                   src={image12}
                   alt='portfolio img'
+                  loading='lazy'
                   className='ml-6 mt-6 w-48 h-32 rounded-lg object-cover'
                 />
               </div>
@@ -135,12 +148,14 @@ const Portfolio = () => {
                 className='w-48 h-48 rounded-lg object-cover'
                 src={image13}
                 alt='portfolio img'
+                loading='lazy'
               />
               <img
                 tabIndex={0}
                 className='w-72 h-56 rounded-lg ml-6 object-cover'
                 src={image18}
                 alt='portfolio img'
+                loading='lazy'
               />
             </div>
           </div>

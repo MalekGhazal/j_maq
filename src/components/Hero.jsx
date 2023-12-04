@@ -8,7 +8,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className='text-gray-100 font-bold text-center text-7xl md:text-9xl'
+          className='text-gray-100 font-bold text-center text-6xl md:text-9xl'
         >
           Jehan Assi
         </motion.h1>

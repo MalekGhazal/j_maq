@@ -1,4 +1,21 @@
+/* eslint-disable react/no-unknown-property */
+import { useState } from "react";
+import SuccessModal from "./SuccessModal";
+
 const Contact = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <>
       <div className='h-[90vh] flex flex-col justify-center items-center'>
@@ -6,7 +23,15 @@ const Contact = () => {
           Contact Me!
         </h1>
         <div className='contact-form w-3/4 lg:w-2/4 flex items-center justify-center h-full mx-auto'>
-          <form className='w-full'>
+          <form
+            className='w-full'
+            name='contact'
+            onSubmit={handleFormSubmit}
+            netlify
+            data-netlify-honeypot='bot-field'
+            data-netlify='true'
+            data-netlify-success='/success'
+          >
             <div className='flex items-center justify-evenly w-full mb-10 gap-4 md:gap-8'>
               <input
                 className='rounded-xl p-2 w-2/4 focus:outline-none'
@@ -47,6 +72,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      {showModal && <SuccessModal onClose={closeModal} />}
     </>
   );
 };
