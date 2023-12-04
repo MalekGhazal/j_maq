@@ -1,5 +1,5 @@
 :root {
-  font-family: "Montserrat", sans-serif;
+  --font-family: "Montserrat", sans-serif;
 }
 
 ::selection {
@@ -25,6 +25,7 @@
 body {
   background-color: #8ec5fc;
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  font-family: var(--font-family);
 }
 
 /* Contact form submit button styling */
