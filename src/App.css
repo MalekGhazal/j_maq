@@ -97,3 +97,65 @@ body {
 }
 
 /* End of Success modal styling */
+
+/* Navbar toggle switch */
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: 0.5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+}
+
+#bar1,
+#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
+}
