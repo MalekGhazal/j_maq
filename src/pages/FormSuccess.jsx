@@ -11,6 +11,10 @@ const FormSuccess = () => {
     if (!isValidSubmission) {
       navigate("/");
     }
+
+    setTimeout(() => {
+      navigate("/");
+    }, 2000);
   }, [navigate]);
 
   return (
