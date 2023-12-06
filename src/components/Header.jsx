@@ -28,14 +28,14 @@ const Header = () => {
         </div>
 
         <input type='checkbox' id='checkbox' onClick={handleToggleMenu} />
-        <label htmlFor='checkbox' className='toggle md:hidden'>
+        <label htmlFor='checkbox' className='toggle md:hidden z-50 fixed'>
           <div className='bars' id='bar1'></div>
           <div className='bars' id='bar2'></div>
           <div className='bars' id='bar3'></div>
         </label>
 
         {showMenu === true ? (
-          <div className='text-xl text-center text-gray-100 font-medium pt-4 shadow-sm md:hidden'>
+          <div className='text-xl fixed top-0 w-full text-center bg-gray-900 bg-opacity-80 text-gray-100 font-medium pt-4 shadow-sm md:hidden'>
             <ul className='flex flex-col items-center justify-center gap-4'>
               <li>
                 <a href='/'>Home</a>
