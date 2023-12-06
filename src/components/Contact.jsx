@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 const Contact = () => {
   return (
     <>
@@ -10,8 +9,8 @@ const Contact = () => {
           <form
             className='w-full'
             name='contact'
-            netlify
-            netlify-honeypot='bot-field'
+            data-netlify='true'
+            data-netlify-honeypot='bot-field'
             action='/success'
           >
             <input type='hidden' name='form-name' value='contact' />
