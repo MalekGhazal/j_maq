@@ -158,3 +158,16 @@ body {
   transition-duration: 0.5s;
   transform: rotate(180deg);
 }
+
+@media only screen and (max-width: 660px) {
+  .modal-content {
+    padding: 15px 10px;
+    font-size: 15px;
+  }
+
+  .close-btn {
+    padding: 0.4em 1em;
+    font-weight: 700;
+    font-size: 15px;
+  }
+}

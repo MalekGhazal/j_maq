@@ -34,23 +34,25 @@ const Header = () => {
           <div className='bars' id='bar3'></div>
         </label>
 
-        {showMenu === true ? (
-          <div className='text-xl fixed top-0 w-full text-center bg-gray-900 bg-opacity-80 text-gray-100 font-medium pt-4 shadow-sm md:hidden'>
-            <ul className='flex flex-col items-center justify-center gap-4'>
-              <li>
-                <a href='/'>Home</a>
-              </li>
-              <li>
-                <a href='/about'>About</a>
-              </li>
-              <li>
-                <a href='/portfolio'>Portfolio</a>
-              </li>
-              <li>
-                <a href='/contact'>Contact</a>
-              </li>
-            </ul>
-          </div>
+        {showMenu ? (
+          <>
+            <div className='backdrop-blur-lg mobile-menu text-xl fixed top-0 w-full text-center text-gray-100 font-medium pt-4 shadow-sm md:hidden'>
+              <ul className='flex flex-col items-center justify-center gap-4'>
+                <li>
+                  <a href='/'>Home</a>
+                </li>
+                <li>
+                  <a href='/about'>About</a>
+                </li>
+                <li>
+                  <a href='/portfolio'>Portfolio</a>
+                </li>
+                <li>
+                  <a href='/contact'>Contact</a>
+                </li>
+              </ul>
+            </div>
+          </>
         ) : (
           <></>
         )}

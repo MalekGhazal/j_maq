@@ -28,10 +28,10 @@ const Contact = () => {
             name='contact'
             onSubmit={handleFormSubmit}
             netlify
-            data-netlify-honeypot='bot-field'
-            data-netlify='true'
-            data-netlify-success='/success'
+            method='POST'
           >
+            <input type='hidden' name='contact' value='contact' />
+
             <div className='flex items-center justify-evenly w-full mb-10 gap-4 md:gap-8'>
               <input
                 className='rounded-xl p-2 w-2/4 focus:outline-none'
