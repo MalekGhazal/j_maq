@@ -13,7 +13,7 @@ const Contact = () => {
             method='POST'
             action='/success'
           >
-            <input type='hidden' name='contact' value='contact' />
+            <input type='hidden' name='form-name' value='contact' />
 
             <div className='flex items-center justify-evenly w-full mb-10 gap-4 md:gap-8'>
               <input
