@@ -6,7 +6,6 @@ import Hero from "../components/Hero";
 import NotFound from "../components/NotFound";
 import Portfolio from "../components/Portfolio";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import FormSuccess from "./FormSuccess";
 
 const Homepage = () => {
   return (
@@ -18,7 +17,6 @@ const Homepage = () => {
           <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/success' element={<FormSuccess />} />
           <Route path='/*' element={<NotFound />} />
         </Routes>
         <Footer />
