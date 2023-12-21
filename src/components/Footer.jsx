@@ -6,7 +6,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} JMAQ. All Rights Reserved. Made with{" "}
           <i className='fa-solid fa-heart'></i> by{" "}
           <a href='https://malekghazal.com/' target='_blank' rel='noreferrer'>
-            Malek Kazal
+            Malek
           </a>
           .
         </div>
