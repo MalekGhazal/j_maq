@@ -1,167 +1,88 @@
-import image17 from "../assets/images/portfolio/17.png";
+import image1 from "../assets/images/portfolio/5.jpg";
 import image2 from "../assets/images/portfolio/2.png";
 import image3 from "../assets/images/portfolio/3.png";
-import image4 from "../assets/images/portfolio/4.png";
+import image4 from "../assets/images/portfolio/4.jpg";
 import image5 from "../assets/images/portfolio/5.png";
 import image6 from "../assets/images/portfolio/6.png";
 import image7 from "../assets/images/portfolio/7.png";
 import image8 from "../assets/images/portfolio/8.png";
 import image9 from "../assets/images/portfolio/9.png";
 import image10 from "../assets/images/portfolio/10.png";
-import image19 from "../assets/images/portfolio/19.png";
+import image11 from "../assets/images/portfolio/8.jpg";
 import image12 from "../assets/images/portfolio/12.png";
 import image13 from "../assets/images/portfolio/13.png";
+import image14 from "../assets/images/portfolio/9.jpg";
+import image15 from "../assets/images/portfolio/10.jpg";
+import image16 from "../assets/images/portfolio/11.jpg";
+import image17 from "../assets/images/portfolio/17.png";
 import image18 from "../assets/images/portfolio/18.png";
+import image19 from "../assets/images/portfolio/19.png";
+import image20 from "../assets/images/portfolio/12.jpg";
+import image21 from "../assets/images/portfolio/13.jpg";
+import image22 from "../assets/images/portfolio/14.png";
+import image23 from "../assets/images/portfolio/15.jpg";
+import image24 from "../assets/images/portfolio/16.png";
 
 const Portfolio = () => {
   return (
-    <>
-      <div className='py-20 flex flex-col items-center justify-center'>
-        <div className='xl:w-1/2 w-11/12'>
-          <h1
-            role='heading'
-            tabIndex={0}
-            className='text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800'
-          >
-            Touching hundreds of lives
-          </h1>
-          <h2
-            role='contentinfo'
-            tabIndex={0}
-            className='text-base leading-normal font-medium text-center text-gray-100 mt-5'
-          >
-            To make you smile is my ultimate goal, hundreds of happy customers,
-            check out my socials to see my latest work and to know me better.
-            Your beautiful smile might be next{" "}
-            <i className='fa-solid fa-heart'></i>
-          </h2>
-        </div>
-        <div className='2xl:px-20 lg:px-12 px-4 flex flex-wrap justify-center mt-4'>
-          <div className='mt-24'>
-            <div className='flex items-end '>
-              <img
-                tabIndex={0}
-                src={image17}
-                alt='portfolio img'
-                loading='lazy'
-                className='w-20 h-20 rounded-lg mr-6 object-cover'
-              />
-              <img
-                tabIndex={0}
-                src={image2}
-                alt='portfolio img'
-                loading='lazy'
-                className='w-48 h-36 rounded-lg object-cover'
-              />
-            </div>
-            <div className='flex items-center justify-end my-6'>
-              <img
-                tabIndex={0}
-                src={image3}
-                alt='portfolio img'
-                loading='lazy'
-                className='object-cover rounded-lg w-48 h-36'
-              />
-            </div>
-            <div className='flex items-start'>
-              <img
-                tabIndex={0}
-                src={image4}
-                alt='portfolio img'
-                loading='lazy'
-                className='w-48 h-48 rounded-lg object-cover'
-              />
-              <img
-                tabIndex={0}
-                src={image5}
-                alt='portfolio img'
-                loading='lazy'
-                className='w-20 h-20 rounded-lg ml-6 flex-shrink-0 object-cover'
-              />
-            </div>
-          </div>
-          <div className='ml-6 mt-32'>
+    <div className='py-20 flex flex-col items-center justify-center'>
+      <div className='xl:w-1/2 w-11/12'>
+        <h1
+          role='heading'
+          tabIndex={0}
+          className='text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800'
+        >
+          Touching hundreds of lives
+        </h1>
+        <h2
+          role='contentinfo'
+          tabIndex={0}
+          className='text-base leading-normal font-medium text-center text-gray-100 mt-5'
+        >
+          To make you smile is my ultimate goal, hundreds of happy customers,
+          check out my socials to see my latest work and to know me better. Your
+          beautiful smile might be next <i className='fa-solid fa-heart'></i>
+        </h2>
+      </div>
+      <div className='2xl:px-20 lg:px-12 px-4 flex flex-wrap justify-center mt-4'>
+        {[
+          image1,
+          image2,
+          image3,
+          image4,
+          image5,
+          image6,
+          image7,
+          image8,
+          image9,
+          image10,
+          image11,
+          image12,
+          image13,
+          image14,
+          image15,
+          image16,
+          image17,
+          image18,
+          image19,
+          image20,
+          image21,
+          image22,
+          image23,
+          image24,
+        ].map((image, index) => (
+          <div key={index} className='w-full md:w-1/2 lg:w-1/4 xl:w-1/4 mb-8'>
             <img
               tabIndex={0}
-              src={image6}
-              className='w-72 h-80 rounded-lg object-cover'
-              alt='portfolio img'
+              src={image}
+              alt={`portfolio img ${index + 1}`}
               loading='lazy'
+              className='w-11/12 h-full rounded-lg object-cover mx-auto'
             />
-            <div className='flex items-start mt-6'>
-              <img
-                tabIndex={0}
-                src={image7}
-                alt='portfolio img'
-                loading='lazy'
-                className='w-48 h-48 rounded-lg object-cover'
-              />
-              <img
-                tabIndex={0}
-                src={image8}
-                alt='portfolio img'
-                loading='lazy'
-                className='w-20 h-20 rounded-lg ml-6 object-cover'
-              />
-            </div>
           </div>
-          <div className='mt-14 ml-6'>
-            <div className='lg:flex '>
-              <div>
-                <img
-                  tabIndex={0}
-                  src={image9}
-                  alt='portfolio img'
-                  loading='lazy'
-                  className='w-96 h-72 rounded-lg object-center object-cover'
-                />
-              </div>
-              <div>
-                <div className='flex ml-6'>
-                  <img
-                    tabIndex={0}
-                    src={image10}
-                    className='w-20 h-20 rounded-lg mt-14 object-cover'
-                    alt='portfolio img'
-                    loading='lazy'
-                  />
-                  <img
-                    tabIndex={0}
-                    src={image19}
-                    className='w-20 h-24 rounded-lg ml-6 object-cover'
-                    alt='portfolio img'
-                    loading='lazy'
-                  />
-                </div>
-                <img
-                  tabIndex={0}
-                  src={image12}
-                  alt='portfolio img'
-                  loading='lazy'
-                  className='ml-6 mt-6 w-48 h-32 rounded-lg object-cover'
-                />
-              </div>
-            </div>
-            <div className='mt-6 flex'>
-              <img
-                tabIndex={0}
-                className='w-48 h-48 rounded-lg object-cover'
-                src={image13}
-                alt='portfolio img'
-                loading='lazy'
-              />
-              <img
-                tabIndex={0}
-                className='w-72 h-56 rounded-lg ml-6 object-cover'
-                src={image18}
-                alt='portfolio img'
-                loading='lazy'
-              />
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
