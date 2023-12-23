@@ -1,4 +1,3 @@
-import image1 from "../assets/images/portfolio/5.jpg";
 import image2 from "../assets/images/portfolio/2.png";
 import image3 from "../assets/images/portfolio/3.png";
 import image4 from "../assets/images/portfolio/4.jpg";
@@ -46,7 +45,6 @@ const Portfolio = () => {
       </div>
       <div className='2xl:px-20 lg:px-12 px-4 flex flex-wrap justify-center mt-4'>
         {[
-          image1,
           image2,
           image3,
           image4,
