@@ -29,7 +29,7 @@ const Portfolio = () => {
         <h1
           role='heading'
           tabIndex={0}
-          className='text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800'
+          className='md:text-6xl text-4xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800'
         >
           Touching hundreds of lives
         </h1>

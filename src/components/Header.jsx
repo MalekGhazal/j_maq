@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <div className=''>
         <div className='text-xl text-center text-gray-100 font-medium pt-4 invisible md:visible'>
-          <ul className='flex items-center justify-center gap-8 sm:gap-14 md:gap-16 lg:gap-20'>
+          <ul className='flex items-center justify-center md:gap-16 lg:gap-20'>
             <li>
               <a href='/'>Home</a>
             </li>

@@ -8,7 +8,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className='text-gray-100 font-bold text-center text-6xl md:text-9xl'
+          className='text-gray-100 font-bold text-center text-5xl sm:text-6xl md:text-7xl lg:text-9xl'
         >
           Jehan Assi
         </motion.h1>
@@ -16,7 +16,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className='text-gray-100 font-semibold text-center text-3xl md:text-5xl'
+          className='text-gray-100 font-semibold text-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl'
         >
           Makeup Artist
         </motion.h3>

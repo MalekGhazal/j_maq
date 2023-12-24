@@ -22,15 +22,10 @@
   background-color: #35464e;
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 body {
   background-color: #8ec5fc;
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  background-repeat: no-repeat;
   font-family: var(--font-family);
 }
 
