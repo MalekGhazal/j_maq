@@ -11,12 +11,12 @@ import image11 from "../assets/images/portfolio/28.jpg";
 import image12 from "../assets/images/portfolio/12.png";
 import image13 from "../assets/images/portfolio/32.jpg";
 import image14 from "../assets/images/portfolio/29.jpg";
-import image15 from "../assets/images/portfolio/26.jpg";
-import image16 from "../assets/images/portfolio/27.jpg";
+import image15 from "../assets/images/portfolio/56.jpeg";
+import image16 from "../assets/images/portfolio/57.jpeg";
 import image17 from "../assets/images/portfolio/17.png";
 import image18 from "../assets/images/portfolio/18.png";
 import image19 from "../assets/images/portfolio/19.png";
-import image20 from "../assets/images/portfolio/25.jpg";
+import image20 from "../assets/images/portfolio/59.jpeg";
 import image21 from "../assets/images/portfolio/13.jpg";
 import image22 from "../assets/images/portfolio/14.png";
 import image23 from "../assets/images/portfolio/15.jpg";
@@ -39,6 +39,10 @@ import image39 from "../assets/images/portfolio/47.jpg";
 import image40 from "../assets/images/portfolio/48.jpg";
 import image41 from "../assets/images/portfolio/49.jpg";
 import image42 from "../assets/images/portfolio/50.jpg";
+import image43 from "../assets/images/portfolio/58.jpeg";
+import image44 from "../assets/images/portfolio/51.jpg";
+import image45 from "../assets/images/portfolio/52.jpg";
+import image46 from "../assets/images/portfolio/53.jpg";
 
 const Portfolio = () => {
   return (
@@ -74,19 +78,23 @@ const Portfolio = () => {
           image8,
           image9,
           image10,
+          image16,
           image11,
           image13,
           image12,
+          image43,
           image14,
-          image16,
           image17,
           image18,
+          image44,
           image19,
           image21,
           image22,
+          image45,
           image23,
           image24,
           image25,
+          image46,
           image26,
           image27,
           image28,
@@ -102,8 +110,8 @@ const Portfolio = () => {
           image38,
           image39,
           image40,
-          image41,
           image42,
+          image41,
         ].map((image, index) => (
           <div key={index} className='w-full md:w-1/2 lg:w-1/4 xl:w-1/4 mb-8'>
             <img
