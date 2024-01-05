@@ -93,7 +93,7 @@ const Portfolio = () => {
           image45,
           image23,
           image24,
-          image25,
+          image42,
           image46,
           image26,
           image27,
@@ -110,7 +110,7 @@ const Portfolio = () => {
           image38,
           image39,
           image40,
-          image42,
+          image25,
           image41,
         ].map((image, index) => (
           <div key={index} className='w-full md:w-1/2 lg:w-1/4 xl:w-1/4 mb-8'>
