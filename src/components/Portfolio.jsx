@@ -43,6 +43,10 @@ import image43 from "../assets/images/portfolio/58.jpeg";
 import image44 from "../assets/images/portfolio/51.jpg";
 import image45 from "../assets/images/portfolio/52.jpg";
 import image46 from "../assets/images/portfolio/53.jpg";
+import image47 from "../assets/images/portfolio/60.jpg";
+import image48 from "../assets/images/portfolio/61.jpg";
+import image49 from "../assets/images/portfolio/62.jpg";
+import image50 from "../assets/images/portfolio/63.jpg";
 
 const Portfolio = () => {
   return (
@@ -107,10 +111,14 @@ const Portfolio = () => {
           image35,
           image36,
           image37,
+          image47,
+          image49,
+          image48,
+          image50,
           image38,
           image39,
-          image40,
           image25,
+          image40,
           image41,
         ].map((image, index) => (
           <div key={index} className='w-full md:w-1/2 lg:w-1/4 xl:w-1/4 mb-8'>
