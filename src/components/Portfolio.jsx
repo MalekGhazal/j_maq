@@ -50,6 +50,7 @@ import image50 from "../assets/images/portfolio/63.jpg";
 import image51 from "../assets/images/portfolio/64.jpg";
 import image52 from "../assets/images/portfolio/65.jpg";
 import image53 from "../assets/images/portfolio/66.jpg";
+import image54 from "../assets/images/portfolio/67.jpg";
 
 const Portfolio = () => {
   return (
@@ -94,6 +95,7 @@ const Portfolio = () => {
           image52,
           image53,
           image45,
+          image54,
           image11,
           image13,
           image12,
