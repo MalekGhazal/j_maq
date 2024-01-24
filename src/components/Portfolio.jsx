@@ -44,14 +44,14 @@ const Portfolio = () => {
         <h1
           role='heading'
           tabIndex={0}
-          className='md:text-6xl text-4xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800'
+          className='md:text-5xl text-4xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800'
         >
           Touching hundreds of lives
         </h1>
         <h2
           role='contentinfo'
           tabIndex={0}
-          className='text-base leading-normal font-medium text-center text-gray-100 mt-5'
+          className='text-lg leading-normal font-medium text-center text-gray-100 mt-5'
         >
           To make you smile is my ultimate goal, hundreds of happy customers,
           check out my socials to see my latest work and to know me better. Your

@@ -13,8 +13,8 @@ const Homepage = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/' element={<Hero />} />
-          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/' element={<Portfolio />} />
+          <Route path='/jehan' element={<Hero />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/*' element={<NotFound />} />
