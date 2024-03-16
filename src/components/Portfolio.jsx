@@ -36,6 +36,10 @@ import image49 from "../assets/images/portfolio/62.jpg";
 import image50 from "../assets/images/portfolio/63.jpg";
 import image53 from "../assets/images/portfolio/66.jpg";
 import image54 from "../assets/images/portfolio/67.jpg";
+import image70 from "../assets/images/portfolio/70.jpg";
+import image71 from "../assets/images/portfolio/71.jpg";
+import image72 from "../assets/images/portfolio/72.jpg";
+import image73 from "../assets/images/portfolio/73.jpg";
 
 const Portfolio = () => {
   return (
@@ -60,6 +64,10 @@ const Portfolio = () => {
       </div>
       <div className='2xl:px-20 lg:px-12 px-4 flex flex-wrap justify-center mt-4'>
         {[
+          image70,
+          image71,
+          image72,
+          image73,
           image4,
           image3,
           image5,
