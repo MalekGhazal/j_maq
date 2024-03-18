@@ -64,10 +64,10 @@ const Portfolio = () => {
       </div>
       <div className='2xl:px-20 lg:px-12 px-4 flex flex-wrap justify-center mt-4'>
         {[
-          image70,
-          image71,
-          image72,
           image73,
+          image72,
+          image71,
+          image70,
           image4,
           image3,
           image5,
