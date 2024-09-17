@@ -44,6 +44,11 @@ import image101 from '../assets/images/portfolio/101.png';
 import image102 from '../assets/images/portfolio/102.png';
 import image103 from '../assets/images/portfolio/103.png';
 import image104 from '../assets/images/portfolio/104.png';
+import image108 from '../assets/images/portfolio/108.jpg';
+import image109 from '../assets/images/portfolio/109.jpg';
+import image110 from '../assets/images/portfolio/110.jpg';
+import image111 from '../assets/images/portfolio/111.jpg';
+import image112 from '../assets/images/portfolio/112.jpg';
 
 const Portfolio = () => {
   return (
@@ -68,6 +73,11 @@ const Portfolio = () => {
       </div>
       <div className="2xl:px-20 lg:px-12 px-4 flex flex-wrap justify-center mt-4">
         {[
+          image110,
+          image111,
+          image112,
+          image109,
+          image108,
           image16,
           image18,
           image101,
