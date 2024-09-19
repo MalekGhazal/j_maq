@@ -49,6 +49,9 @@ import image109 from '../assets/images/portfolio/109.jpg';
 import image110 from '../assets/images/portfolio/110.jpg';
 import image111 from '../assets/images/portfolio/111.jpg';
 import image112 from '../assets/images/portfolio/112.jpg';
+import image80 from '../assets/images/portfolio/80.jpg';
+import image81 from '../assets/images/portfolio/81.jpg';
+import image82 from '../assets/images/portfolio/82.jpg';
 
 const Portfolio = () => {
   return (
@@ -80,6 +83,9 @@ const Portfolio = () => {
           image108,
           image16,
           image18,
+          image80,
+          image81,
+          image82,
           image101,
           image102,
           image10,
