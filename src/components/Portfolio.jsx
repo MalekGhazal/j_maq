@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect, useRef } from 'react';
 
-// ─── Vite glob import ────────────────────────────────────────────────────────
 const imageModules = import.meta.glob(
   '../assets/images/portfolio/*.{webp,jpg,jpeg,png}',
   { eager: true },
@@ -17,11 +16,17 @@ for (const [path, mod] of Object.entries(imageModules)) {
   }
 }
 
-// ─── CLIENT ORDER ────────────────────────────────────────────────────────────
 const ORDERED_FILENAMES = [
-  '117',
+  '126',
+  '102',
   '118',
   '119',
+  '120',
+  '121',
+  '122',
+  '123',
+  '124',
+  '125',
   '113',
   '114',
   '115',
@@ -37,7 +42,7 @@ const ORDERED_FILENAMES = [
   '81',
   '82',
   '101',
-  '102',
+  '117',
   '10',
   '14',
   '103',
@@ -81,7 +86,6 @@ const ORDERED_FILENAMES = [
   '47',
   '49',
 ];
-// ─────────────────────────────────────────────────────────────────────────────
 
 const images = ORDERED_FILENAMES.map((num) => imageByNumber[num]).filter(
   Boolean,
@@ -112,7 +116,6 @@ const Lightbox = ({ src, index, total, onClose, onPrev, onNext }) => {
       }}
       onClick={onClose}
     >
-      {/* Counter */}
       <div
         className="absolute top-6 left-1/2 -translate-x-1/2 text-white/50 text-xs tracking-[0.25em] uppercase"
         style={{ fontFamily: 'Montserrat, sans-serif' }}
@@ -120,7 +123,6 @@ const Lightbox = ({ src, index, total, onClose, onPrev, onNext }) => {
         {index + 1} &nbsp;/&nbsp; {total}
       </div>
 
-      {/* Close */}
       <button
         onClick={onClose}
         className="absolute top-4 right-6 text-white/50 hover:text-white transition-colors text-4xl font-light leading-none"
@@ -129,7 +131,6 @@ const Lightbox = ({ src, index, total, onClose, onPrev, onNext }) => {
         ×
       </button>
 
-      {/* Prev */}
       <button
         onClick={(e) => {
           e.stopPropagation();
@@ -141,7 +142,6 @@ const Lightbox = ({ src, index, total, onClose, onPrev, onNext }) => {
         ‹
       </button>
 
-      {/* Image */}
       <img
         src={src}
         alt={`portfolio ${index + 1}`}
@@ -153,7 +153,6 @@ const Lightbox = ({ src, index, total, onClose, onPrev, onNext }) => {
         }}
       />
 
-      {/* Next */}
       <button
         onClick={(e) => {
           e.stopPropagation();
@@ -168,7 +167,7 @@ const Lightbox = ({ src, index, total, onClose, onPrev, onNext }) => {
   );
 };
 
-// ─── Individual card with scroll-triggered fade-in ───────────────────────────
+// ─── Card ────────────────────────────────────────────────────────────────────
 const PortfolioCard = ({ src, index, onClick }) => {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -184,17 +183,17 @@ const PortfolioCard = ({ src, index, onClick }) => {
     return () => observer.disconnect();
   }, []);
 
-  const delay = (index % 6) * 65;
+  const delay = (index % 5) * 60;
 
   return (
     <div
       ref={ref}
-      className="relative overflow-hidden rounded-xl cursor-pointer group mb-3"
+      className="relative overflow-hidden rounded-xl cursor-pointer group"
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0)' : 'translateY(22px)',
         transition: `opacity 0.5s ease ${delay}ms, transform 0.5s ease ${delay}ms`,
-        breakInside: 'avoid',
+        aspectRatio: '3/4',
       }}
       onClick={() => onClick(index)}
       tabIndex={0}
@@ -207,11 +206,9 @@ const PortfolioCard = ({ src, index, onClick }) => {
         alt={`portfolio img ${index + 1}`}
         loading="lazy"
         decoding="async"
-        className="w-full h-auto block transition-transform duration-500 group-hover:scale-[1.03]"
-        style={{ display: 'block' }}
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
       />
 
-      {/* Subtle hover shimmer */}
       <div
         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         style={{
@@ -220,7 +217,6 @@ const PortfolioCard = ({ src, index, onClick }) => {
         }}
       />
 
-      {/* Bottom fade on hover */}
       <div
         className="absolute bottom-0 left-0 right-0 h-16 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end px-3 pb-3"
         style={{
@@ -239,7 +235,7 @@ const PortfolioCard = ({ src, index, onClick }) => {
   );
 };
 
-// ─── Main page ───────────────────────────────────────────────────────────────
+// ─── Main ────────────────────────────────────────────────────────────────────
 const Portfolio = () => {
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
@@ -254,7 +250,7 @@ const Portfolio = () => {
       className="min-h-screen py-24 px-4 md:px-8"
       style={{ fontFamily: 'Montserrat, sans-serif' }}
     >
-      {/* ── Page header ── */}
+      {/* ── Header ── */}
       <div className="max-w-xl mx-auto text-center mb-16">
         <span
           className="inline-block text-[11px] tracking-[0.3em] uppercase mb-5 px-5 py-2 rounded-full"
@@ -280,10 +276,7 @@ const Portfolio = () => {
           Touching hundreds
           <br />
           <span
-            style={{
-              color: 'rgba(255,255,255,0.88)',
-              fontStyle: 'italic',
-            }}
+            style={{ color: 'rgba(255,255,255,0.88)', fontStyle: 'italic' }}
           >
             of lives
           </span>
@@ -299,7 +292,6 @@ const Portfolio = () => {
           <i className="fa-solid fa-heart" style={{ color: '#d16fbc' }} />
         </p>
 
-        {/* Gradient pill divider */}
         <div
           className="mt-10 mx-auto rounded-full"
           style={{
@@ -310,19 +302,31 @@ const Portfolio = () => {
         />
       </div>
 
-      {/* ── Masonry grid ── */}
-      <div className="max-w-[1400px] mx-auto">
+      {/* ── Row-by-row grid ── */}
+      <div
+        className="max-w-[1400px] mx-auto"
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: '12px',
+        }}
+      >
         <style>{`
-          .portfolio-masonry {
-            columns: 2;
-            column-gap: 12px;
-          }
-          @media (min-width: 640px)  { .portfolio-masonry { columns: 3; } }
-          @media (min-width: 1024px) { .portfolio-masonry { columns: 4; } }
-          @media (min-width: 1280px) { .portfolio-masonry { columns: 5; } }
+          @media (min-width: 640px)  { .portfolio-row-grid { grid-template-columns: repeat(3, 1fr) !important; } }
+          @media (min-width: 1024px) { .portfolio-row-grid { grid-template-columns: repeat(4, 1fr) !important; } }
+          @media (min-width: 1280px) { .portfolio-row-grid { grid-template-columns: repeat(5, 1fr) !important; } }
         `}</style>
 
-        <div className="portfolio-masonry">
+        <div
+          className="portfolio-row-grid"
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(2, 1fr)',
+            gap: '12px',
+            width: '100%',
+            gridColumn: '1 / -1',
+          }}
+        >
           {images.map((src, index) => (
             <PortfolioCard
               key={index}
